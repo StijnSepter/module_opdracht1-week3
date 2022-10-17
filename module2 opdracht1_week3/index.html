@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>formulierens</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="doelbesteling.php" method="post">
+        voornaam:<input
+          type="text"
+          name="vnaam"
+          placeholder="voornaam"
+          required
+        /><br />
+        achternaam:<input
+          type="text"
+          name="anaam"
+          placeholder="achternaam"
+          required
+        /><br />
+        datetime-local<input
+          type="text"
+          name="date"
+          placeholder="datum"
+          required
+        /><br />
+        time<input type="time" name="time" placeholder="time" /><br />
+        week<input type="date" name="date" placeholder="week" required /><br />
+        month<input
+          type="month"
+          name="date"
+          placeholder="month"
+          required
+        /><br />
+        <input
+          id="country"
+          type="text"
+          name="country"
+          size="40"
+          list="countries"
+        />
+        <input type="number" min="5" max="100" step="5" value="10" /><br />
+        <input type="email" placeholder="e-mail" required />
+        <input type="file" />
+        <input type="color" <input type="submit" />
+        <input type="range" min="1" max="10" />
+        <datalist id="countries">
+          <option value="Australia" />
+          <option value="Canada" />
+          <option value="Germany" />
+          <option value="Frace" />
+          <option value="United Kingdom" />
+          <option value="United States" />
+        </datalist>
+      </form>
+    </div>
+  </body>
+</html>
